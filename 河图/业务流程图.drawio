@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-02T08:28:42.557Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="HfjYp3FPUUDh7aRmmGpm" version="22.1.15" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-01-02T09:18:58.186Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="PTogdo_xSGzwdmGGhquE" version="22.1.15" type="github" pages="3">
   <diagram name="云客服排班" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="2868" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -343,8 +343,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="L27sT05DmQfjBxw_SNSH-1" value="河图" style="swimlane;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
-          <mxGeometry x="120" y="140" width="1560" height="870" as="geometry" />
+        <mxCell id="L27sT05DmQfjBxw_SNSH-1" value="河图" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="120" y="140" width="1560" height="2590" as="geometry" />
         </mxCell>
         <mxCell id="e6gYELl5S9j2PkU8lID2-6" value="员工排班状态" style="swimlane;startSize=23;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
           <mxGeometry x="30" y="40" width="490" height="720" as="geometry" />
@@ -358,7 +358,7 @@
         <mxCell id="e6gYELl5S9j2PkU8lID2-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="e6gYELl5S9j2PkU8lID2-6" source="XSV6ZZ4CAGdxI-XIQxMN-1" target="e6gYELl5S9j2PkU8lID2-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6gYELl5S9j2PkU8lID2-65" value="排班状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e6gYELl5S9j2PkU8lID2-58">
+        <mxCell id="e6gYELl5S9j2PkU8lID2-65" value="状态叠加，计算当前时刻的排班状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e6gYELl5S9j2PkU8lID2-58">
           <mxGeometry x="0.7226" y="-2" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
@@ -471,6 +471,78 @@
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-84" target="e6gYELl5S9j2PkU8lID2-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-84" value="不遵时，参入员工状态信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="538" y="788" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.505;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-63" target="e6gYELl5S9j2PkU8lID2-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.561;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-70" target="e6gYELl5S9j2PkU8lID2-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-87" value="季度表&lt;br&gt;call_state_info_2024Q1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#FFFF00;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="760" y="788" width="146" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-89" target="e6gYELl5S9j2PkU8lID2-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-89" value="历史遵时率数据清洗&lt;br&gt;UnComplyCleaningJob" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="510" y="1040" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-90" value="将不同职能，按照数据源分组&lt;br&gt;分别处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="930" y="1040" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-90">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1620" y="1070" as="targetPoint" />
+            <mxPoint x="1070" y="1070" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-117" value="员工历史状态时段数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="930" y="1220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-120" target="e6gYELl5S9j2PkU8lID2-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-120" value="计算不遵时数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="655" y="1390" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-121" value="调度排班" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="673" y="1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-122" value="预排班" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="411" y="1217" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-124" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-122" target="e6gYELl5S9j2PkU8lID2-120">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="1570" as="sourcePoint" />
+            <mxPoint x="940" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-125" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-117" target="e6gYELl5S9j2PkU8lID2-120">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="1310" as="sourcePoint" />
+            <mxPoint x="1224" y="1423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-130" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="L27sT05DmQfjBxw_SNSH-1" source="e6gYELl5S9j2PkU8lID2-127" target="e6gYELl5S9j2PkU8lID2-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-127" value="计算不遵时数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="655" y="1530" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-129" value="arrange_uncomply_record_2024S1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#FFFF00;strokeColor=#006EAF;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="637" y="1670" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-131" value="历史遵时率数据" style="swimlane;startSize=23;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="280" y="930" width="910" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-147" value="当日遵时率数据" style="swimlane;startSize=23;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="L27sT05DmQfjBxw_SNSH-1">
+          <mxGeometry x="279.5" y="1790" width="910" height="800" as="geometry" />
+        </mxCell>
         <mxCell id="e6gYELl5S9j2PkU8lID2-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="e6gYELl5S9j2PkU8lID2-31" target="e6gYELl5S9j2PkU8lID2-73">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1312.0000000000005" y="560" as="targetPoint" />
@@ -529,16 +601,82 @@
         <mxCell id="e6gYELl5S9j2PkU8lID2-37" value="服务类型=在线" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-34">
           <mxGeometry y="60" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="e6gYELl5S9j2PkU8lID2-49" value="TODO" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-31">
-          <mxGeometry x="68" y="730" width="260" height="60" as="geometry" />
+        <mxCell id="e6gYELl5S9j2PkU8lID2-83" value="后续优化点：&lt;br&gt;1.需要统一接入方式，建议上游系统将员工状态通过消息队列统一广播" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontColor=#FF0000;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-31">
+          <mxGeometry x="68" y="740" width="400" height="60" as="geometry" />
         </mxCell>
         <mxCell id="e6gYELl5S9j2PkU8lID2-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="e6gYELl5S9j2PkU8lID2-24">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1740" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e6gYELl5S9j2PkU8lID2-52" value="..." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1845" y="928" width="30" height="30" as="geometry" />
+        <mxCell id="e6gYELl5S9j2PkU8lID2-94" value="外部员工历史状态时段数据" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="1060" width="730" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-95" value="电话相关" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-94">
+          <mxGeometry x="68" y="81" width="292" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-96" value="数据源=河图-call_state_info_Q1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-95">
+          <mxGeometry y="30" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-97" value="服务类型=电话、顾问、投诉、订单终拒、订单已审供应商" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-95">
+          <mxGeometry y="60" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-101" value="国内机票2相关" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-94">
+          <mxGeometry x="68" y="480" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-102" value="数据源=河图-arrange_emp_work_status" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-101">
+          <mxGeometry y="30" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-103" value="服务类型=出行出票" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-101">
+          <mxGeometry y="60" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-104" value="在线相关" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-94">
+          <mxGeometry x="68" y="610" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-105" value="数据源=在线接口" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-104">
+          <mxGeometry y="30" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-106" value="服务类型=在线" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-104">
+          <mxGeometry y="60" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-107" value="国内机票1相关" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-94">
+          <mxGeometry x="68" y="220" width="292" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-108" value="数据源=河图-WorkerStateFlow" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-107">
+          <mxGeometry y="30" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-109" value="服务类型=出行航变、出行改期、出行航审" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-107">
+          <mxGeometry y="60" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-110" value="后续优化点：&lt;br&gt;1.统一修改为接口查询" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontColor=#FF0000;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-94">
+          <mxGeometry x="68" y="740" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-113" value="出行退票相关" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-94">
+          <mxGeometry x="68" y="350" width="292" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-114" value="数据源=河图-flight_user_state_change_log" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-113">
+          <mxGeometry y="30" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-115" value="服务类型=出行退票" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="e6gYELl5S9j2PkU8lID2-113">
+          <mxGeometry y="60" width="292" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-112" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=#FF0000;" edge="1" parent="1" source="e6gYELl5S9j2PkU8lID2-87" target="e6gYELl5S9j2PkU8lID2-96">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1490" y="1220" as="sourcePoint" />
+            <mxPoint x="1540" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-118" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" target="e6gYELl5S9j2PkU8lID2-117">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1740" y="1390" as="sourcePoint" />
+            <mxPoint x="1610" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6gYELl5S9j2PkU8lID2-126" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="e6gYELl5S9j2PkU8lID2-121">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1140" y="1430" as="sourcePoint" />
+            <mxPoint x="853" y="1530" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
