@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-05T03:42:09.785Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="m1pXGHJcleZ67V14abkq" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-05T03:53:33.504Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="g6NNWlZqOieSev-AjNA1" version="22.1.16" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1062" dy="1473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1793" dy="1901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -606,7 +606,7 @@
             <mxPoint x="770" y="60" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qOMC9g4MwK-6u9oZ0a4g-372" value="开启技能" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="qOMC9g4MwK-6u9oZ0a4g-372" value="技能开启/关闭" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="2650" width="1140" height="1380" as="geometry" />
         </mxCell>
         <mxCell id="qOMC9g4MwK-6u9oZ0a4g-383" value="路由1--排队中" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="qOMC9g4MwK-6u9oZ0a4g-372">
